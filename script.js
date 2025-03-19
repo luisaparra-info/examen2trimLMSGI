@@ -1,9 +1,10 @@
 // Estructura para almacenar los enlaces
 class Enlace {
-    constructor(descripcion, url, categoria) {
+    constructor(descripcion, url, categoria, favorito=false) {
       this.descripcion = descripcion;
       this.url = url;
       this.categoria = categoria;
+      this.favorito = favorito;
     }
   }
   
@@ -12,7 +13,7 @@ class Enlace {
     constructor() {
       this.enlaces = [
         new Enlace("Curso de JavaScript", "https://www.codecademy.com/learn/introduction-to-javascript", "categoriaRecursosEducativos"),
-        new Enlace("React Docs", "https://reactjs.org/docs/getting-started.html", "categoriaHerramientasDeDesarrollo"),
+        new Enlace("React Docs", "https://reactjs.org/docs/getting-started.html", "categoriaHerramientasDeDesarrollo", true),
         new Enlace("Twitter", "https://twitter.com", "categoriaRedesSociales"),
         new Enlace("Noticias de Tecnología", "https://www.techcrunch.com", "categoriaNoticiasYBlogs"),
         new Enlace("Canal de Python en YouTube", "https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyY1K4Q", "categoriaVideosEducativos"),
